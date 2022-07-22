@@ -1,0 +1,73 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.buttons {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 60vh;
+    width: 30vw;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    flex-direction: column;
+}
+
+.big-button {
+    grid-column: span 2;
+}
+
+.button {
+    border-radius: 25px;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.button:hover {
+    background-color: darkgrey;
+}
+
+.calculator {
+    background-color: rgb(122, 122, 122);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.current {
+    text-align: right;
+    font-weight: bolder;
+    font-size: 28px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px 20px;
+}
+
+.lastNumber {
+    text-align: right;
+    font-weight: bolder;
+    font-size: 28px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px 20px;
+}
+
+.screen {
+    height: 10vh;
+    width: 30vw;
+    position: relative;
+    border-radius: 25px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
